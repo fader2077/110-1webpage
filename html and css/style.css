@@ -1,0 +1,262 @@
+body
+{
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;   
+}
+.navigation
+{
+    position: absolute;
+    top: 75px;
+    height: 980px;
+    width: 70px;
+    background: #2b343b;
+    box-shadow: 10px 0 0 #4187f6;
+    border-left: 10px solid #2b343b;
+    overflow-x: hidden;
+    transition: width 0.5s;
+}
+.navigation:hover
+{
+    width: 300px;
+}
+.navigation ul
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navigation ul li
+{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active
+{
+    background: #4187f6;
+
+}
+.navigation ul li.active a::before
+{
+    content: '';
+    position: absolute;
+    top:-30px;
+    right: 0;
+    width: 30px;
+    height:  30px;
+    background: #2b343b;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #4187f6;
+}
+.navigation ul li.active a::after
+{
+    content: '';
+    position: absolute;
+    bottom:-30px;
+    right: 0;
+    width: 30px;
+    height:  30px;
+    background: #2b343b;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #4187f6;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icom
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation ul li a .icom ion-icon
+{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+.navigation ul li a .list
+{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+.headder
+{
+    position: absolute;
+    background-color: #4187f6;
+    width: 2040px;
+    height: 10%;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.titletext
+{
+    color: #fff;
+    position: absolute;
+    left: 44%;
+}
+.block
+{
+    position: absolute;
+    width: 430px;
+    height: 338px;
+    background-color: #FFF;
+    top: 10%;
+    left: 5%;
+    border-radius: 5%;
+}
+.text1
+{
+    position: absolute;
+    color: #fff;
+    top: 15%;
+    left: 28%;
+    text-align: left;
+    font-size: large;
+}
+.vedio1
+{
+    position: absolute;
+    top:46%;
+    left: 5.5%;
+}
+.blockforvedio
+{
+    position: absolute;
+    background-color: #FFF;
+    width: 580px;
+    height: 335px;
+    top: 45%;
+    left: 5%;
+    border-radius: 5%;
+}
+.titt
+{
+    position: absolute;
+    background-color: #4187f6;
+    height: 100px;
+    width: 250px;
+    top: 25px;
+    left: 50%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.p1
+{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 20%;
+    left: 25%;
+}
+.p2
+{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 20%;
+    left: 51%;
+}
+.p3
+{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 20%;
+    left: 77%;
+}
+.ewe
+{
+    position: absolute;
+    color: #fff;
+    left: 53%;
+    top: 5%;
+}
+.head
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.bb
+{
+    background-color: #fff;
+    border-radius: 5%;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}   
+.move
+{
+    position:relative;
+    animation:TestMove2 2s infinite alternate;
+}
+@keyframes TestMove2
+{
+    from{left: 0%;}
+    to{left: 60%;}
+}
+.tackop
+{
+    position: absolute;
+    background-color: #4187f6;
+    left: 50%;
+    width: 200px;
+    height: 80px;
+    border-radius: 5%;
+}
+.window
+{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    height: 350px;
+}
+.info
+{
+    color: #fff;
+    text-align: center;
+}
+.xmas
+{
+    position: absolute;
+    left: 43%;
+    top: 15%;
+    background-color: #fff;
+}
+.nice
+{
+    position: absolute;
+    border-radius: 5%;
+    left: 18%;
+    top: 25%;
+    height: 250px;
+    width: 450px;
+}

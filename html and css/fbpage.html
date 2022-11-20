@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript">
+
+        function blink()
+        {
+        //定義圖片的顯示和隱藏屬性
+        tp.style.visibility = (tp.style.visibility=="hidden")?"visible":"hidden";  
+        //每0.5秒刷新一次
+        setTimeout("blink()",300);
+        }
+
+        function timeout()
+        {
+        //定義圖片的顯示和隱藏屬性
+        tp.style.visibility = (tp.style.visibility=="hidden")?"visible":"hidden";  
+        //每0.5秒刷新一次
+        setTimeout("blink()",300);
+        }
+        </script>
+</head>
+<body style="background-color: #2b343b;">
+<p class="xmas">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D105238362029891%26id%3D105236305363430&show_text=true&width=500" width="500" height="553" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</p>
+<a href="https://www.youtube.com/watch?v=jDCVow3OM1E" target="_blank">
+<img src="img/ha.jpg" class="nice"/>
+</a>>
+<div class="navigation" style="position: absolute; top: 0; left: 0; height: 1080px;">
+    <ul>
+        <li class="list">
+            <a href="index.html">
+                <span class="icom"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="list">Home</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="originOf.html">
+                <span class="icom"><ion-icon name="skull-outline"></ion-icon></span>
+                <span class="list">Origin of COVID-19</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="web.html">
+                <span class="icom"><ion-icon name="browsers-outline"></ion-icon></span>
+                <span class="list">Website</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="help.html">
+                <span class="icom"><ion-icon name="information-circle-outline"></ion-icon></span>
+                <span class="list">Help</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="about.html">
+                <span class="icom"><ion-icon name="people-outline"></ion-icon></span>
+                <span class="list">About us</span>
+            </a>
+        </li>
+        <li class="list active">
+            <a href="fbpage.html">
+                <span class="icom"><ion-icon name="thumbs-up-outline"></ion-icon></span>
+                <span class="list">Like us</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+//add active class in selected tab
+const list = document.querySelectorAll('.list');
+function activeLink(){
+    list.forEach((item)=>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+list.forEach((item)=>
+item.addEventListener('click',activeLink));
+</script>
+</body>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript">
+
+        function blink()
+        {
+        //定義圖片的顯示和隱藏屬性
+        tp.style.visibility = (tp.style.visibility=="hidden")?"visible":"hidden";  
+        //每0.5秒刷新一次
+        setTimeout("blink()",300);
+        }
+
+        function timeout()
+        {
+        //定義圖片的顯示和隱藏屬性
+        tp.style.visibility = (tp.style.visibility=="hidden")?"visible":"hidden";  
+        //每0.5秒刷新一次
+        setTimeout("blink()",300);
+        }
+        </script>
+</head>
+<body style="background-color: #2b343b;">
+    <p class="titt">
+        <h1 class="ewe"><a href="https://www.youtube.com/watch?v=up7ZRYX93iU" style="color: white; text-decoration: none;">關於我們</a></h1>
+    </p>
+    <p class="p1">
+        <img src="img/nice.jpg" class="head" style="left: 10px; top: 10px; position: absolute;"/>
+        <p class="bb" style="top: 45%;left: 23%;">
+            <h2 style="position: absolute; top: 46%;left:28.5%;">李軒豪</h2>
+            <h3 style="position: absolute; top: 50%;left:25.1%;"><a href="mailto:hibana2077@gmail.com" style="color: black;" target="_blank">hibana2077@gmail.com</a></h3>
+            <h3 style="position: absolute; top: 54%;left:25%;">一個喜歡玩遊戲的大一學生</h3>
+        </p>
+    </p>
+
+    <p class="p2">
+        <img src="img/p2.jpg" class="head" style="left: 10px; top: 10px; position: absolute;"/>
+        <p class="bb" style="top: 45%;left: 49%;">
+            <h2 style="position: absolute; top:46%;left: 54.5%;">李捷新</h2>
+            <h3 style="position: absolute; top:50%;left: 51.5%;"><a href="mailto:JIEXINLI3@gmail.com" style="color: black;">JIEXINLI3@GMAIL.COM</a></h3>
+            <h3 style="position: absolute; top:54%;left: 51.3%;">一個在知本大學度假的廢物</h3>
+        </p>
+    </p>
+
+    <p class="p3">
+        <img src="img/love.jpg" class="head" style="left: 10px; top: 10px; position: absolute;"/>
+        <p class="bb" style="top: 45%;left: 75%;">
+            <h2 style="position: absolute; top: 46%;left:79%;">IKEA Shark</h2>
+            <h3 style="position: absolute; top: 50%;left:77.3%;"><a href="mailto:jim8536151@gmail.com" style="color: black;">jim8536151@gmail.com</a></h3>
+            <h3 style="position: absolute; top: 54%;left:75%;">一個正在往禿禿工程師邁進的大一生</h3>
+        </p>
+    </p>
+
+    <img src="img/574bff8ef8356d7edb3b912f48e65774.gif" class="move"/>
+
+    
+    <img alt="創用 CC 授權條款" style="position: absolute; left: 95%; top: 95%;" src="https://i.creativecommons.org/l/by/3.0/tw/88x31.png" />
+
+    <div class="navigation" style="position: absolute; top: 0; left: 0; height: 1080px;">
+        <ul>
+            <li class="list">
+                <a href="index.html">
+                    <span class="icom"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="list">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="originOf.html">
+                    <span class="icom"><ion-icon name="skull-outline"></ion-icon></span>
+                    <span class="list">Origin of COVID-19</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="web.html">
+                    <span class="icom"><ion-icon name="browsers-outline"></ion-icon></span>
+                    <span class="list">Website</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="help.html">
+                    <span class="icom"><ion-icon name="information-circle-outline"></ion-icon></span>
+                    <span class="list">Help</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="about.html">
+                    <span class="icom"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="list">About us</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="fbpage.html">
+                    <span class="icom"><ion-icon name="thumbs-up-outline"></ion-icon></span>
+                    <span class="list">Like us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    //add active class in selected tab
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+        list.forEach((item)=>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item)=>
+    item.addEventListener('click',activeLink));
+</script>
+</body>
